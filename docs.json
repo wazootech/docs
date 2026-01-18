@@ -82,7 +82,7 @@
       "anchors": [
         {
           "anchor": "Dashboard",
-          "href": "https://worlds.wazoo.tech",
+          "href": "https://console.wazoo.tech",
           "icon": "globe"
         }
       ]
@@ -102,7 +102,7 @@
     "primary": {
       "type": "button",
       "label": "Go to Console",
-      "href": "https://worlds.wazoo.tech"
+      "href": "https://console.wazoo.tech"
     }
   },
   "footer": {

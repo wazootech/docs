@@ -5,7 +5,7 @@ description: "Start building with Worlds API in under 5 minutes"
 
 ## Setup
 
-To get started, you'll need an API key and a World ID. You can get these from the [Worlds Console](https://worlds.wazoo.tech).
+To get started, you'll need an API key and a World ID. You can get these from the [Worlds Console](https://console.wazoo.tech).
 
 ### 1. Install the SDK
 
@@ -27,7 +27,7 @@ deno add jsr:@fartlabs/worlds
 import { World } from "@fartlabs/worlds";
 
 const world = new World({
-  baseUrl: "https://api.worlds.wazoo.tech/v1",
+  baseUrl: "https://api.wazoo.tech/v1", // Adjust if using a different endpoint
   apiKey: "YOUR_API_KEY",
   worldId: "YOUR_WORLD_ID",
 });
