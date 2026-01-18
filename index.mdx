@@ -1,97 +1,75 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: Introduction
+description: "Welcome to Worlds API™"
 ---
 
-## Setting up
+<img
+  className="block dark:hidden"
+  src="/logo/light.svg"
+  alt="Worlds API Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/logo/dark.svg"
+  alt="Worlds API Hero Dark"
+/>
 
-Get your documentation site up and running in minutes.
+## Overview
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
+**Worlds API™** is a REST API designed to manage, query, update, and reason over [SPARQL 1.1](https://www.w3.org/TR/sparql11-overview/)-compatible knowledge bases at the edge. It places malleable knowledge within arm's reach of your AI agent.
 
-## Make it yours
+We operate on the concept of **Worlds**—isolated, queryable knowledge bases that your agents can interact with.
 
-Design a docs site that looks great and empowers your users.
+## Key Features
 
-<Columns cols={2}>
+<CardGroup cols={2}>
   <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
+    title="SPARQL 1.1 Support"
+    icon="database"
+    href="/concepts/sparql"
   >
-    Edit your docs locally and preview them in real time.
+    Full support for standard SPARQL queries and updates, powered by N3.
   </Card>
   <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
+    title="Vector Search"
+    icon="magnifying-glass"
+    href="/concepts/search"
   >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
+    Semantic search over your knowledge base using Google Gemini embeddings.
   </Card>
   <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
+    title="Edge Native"
+    icon="bolt"
+    href="/concepts/worlds"
   >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
-
-## Create beautiful pages
-
-Everything you need to create world-class documentation.
-
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
+    Designed for high-performance edge environments.
   </Card>
   <Card
-    title="Code samples"
+    title="TypeScript SDK"
     icon="code"
-    href="/essentials/code"
+    href="/sdk/overview"
   >
-    Add sample code to demonstrate how to use your product.
+    Fully typed SDK for easy integration into your applications.
+  </Card>
+</CardGroup>
+
+## Getting Started
+
+To get started with Worlds API, you'll need an API key. You can generate one in the [Console](https://wazoo.tech).
+
+<CardGroup cols={2}>
+  <Card
+    title="Quickstart"
+    icon="rocket"
+    href="/quickstart"
+  >
+    Create your first World and run a query in under 5 minutes.
   </Card>
   <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
+    title="Authentication"
+    icon="key"
+    href="/authentication"
   >
-    Display images and other media.
+    Learn how to authenticate your requests.
   </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
-
-## Need inspiration?
-
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+</CardGroup>

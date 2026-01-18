@@ -1,0 +1,15 @@
+---
+title: "Get Usage"
+api: "GET https://api.worlds.wazoo.tech/v1/worlds/{worldId}/usage"
+description: "Get usage statistics for a world."
+---
+
+## Path Parameters
+
+<ParamField path="worldId" type="string" required>
+  The unique identifier of the world.
+</ParamField>
+
+## Response
+
+Returns a list of usage buckets documenting API consumption.

@@ -1,0 +1,73 @@
+---
+title: SDK Reference
+description: "Method reference for the `World` and `Worlds` classes"
+---
+
+## `World` Class
+
+The `World` class represents a single knowledge base instance.
+
+### Constructor
+
+```typescript
+new World(options: {
+  baseUrl?: string;
+  apiKey: string;
+  worldId: string;
+  fetch?: typeof fetch;
+})
+```
+
+### Methods
+
+#### `sparqlQuery`
+
+Executes a SPARQL query against the world.
+
+```typescript
+sparqlQuery(query: string, options?: { accountId?: string }): Promise<unknown>
+```
+
+#### `sparqlUpdate`
+
+Executes a SPARQL update against the world.
+
+```typescript
+sparqlUpdate(update: string, options?: { accountId?: string }): Promise<void>
+```
+
+#### `search`
+
+Performs a semantic search within the world.
+
+```typescript
+search(query: string, options?: {
+  limit?: number;
+  offset?: number;
+  accountId?: string;
+}): Promise<SearchResult>
+```
+
+#### `get`
+
+Retrieves the world's metadata.
+
+```typescript
+get(options?: { accountId?: string }): Promise<WorldRecord | null>
+```
+
+#### `update`
+
+Updates the world's metadata.
+
+```typescript
+update(data: WorldRecord, options?: { accountId?: string }): Promise<void>
+```
+
+#### `remove`
+
+Deletes the world.
+
+```typescript
+remove(options?: { accountId?: string }): Promise<void>
+```
