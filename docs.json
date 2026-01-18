@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Worlds API",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#D97706",
+    "light": "#F59E0B",
+    "dark": "#78350F"
   },
   "favicon": "/images/favicon.svg",
   "navigation": {
